@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maqased al Noor — Website Under Maintenance</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- three.js removed on purpose; script.js still loaded for UI -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- background image container -->
+  <div id="canvas-container" aria-hidden="true"></div>
+
+  <main class="page-root" role="main" aria-labelledby="page-title">
+    <article class="glass-card" aria-label="Maqased al Noor Landscape — maintenance info">
+      <header class="card-header">
+        <div class="brand">
+          <h1 id="page-title" class="brand-title">MAN <span class="brand-sub">LANDSCAPE</span></h1>
+          <p class="tagline">Shaping Nature with Excellence</p>
+        </div>
+
+        <div class="status-area">
+          <button id="status-badge" class="status-badge" aria-pressed="false" aria-live="polite">
+            <span class="emoji">🚧</span>
+            <span class="text">Website Under Maintenance</span>
+          </button>
+          <div class="eta">Estimated return: <strong>Shortly</strong></div>
+        </div>
+      </header>
+
+      <section class="content" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="section-title">About Maqased al Noor Landscape</h2>
+        <p class="lead">
+          Maqased al Noor Landscape is a Dubai-based landscaping company providing creative design,
+          quality installation and reliable maintenance. We design and maintain beautiful, sustainable
+          outdoor spaces using premium plants and materials.
+        </p>
+
+        <hr class="sep">
+
+        <div class="main-grid">
+          <!-- Services column -->
+          <div class="services-col">
+            <h3 class="subheading">Our Services</h3>
+            <div class="services-grid" id="services-grid" aria-live="polite">
+              <div class="service">Landscape design &amp; maintenance</div>
+              <div class="service">Hardscape &amp; softscape</div>
+              <div class="service">Irrigation systems (smart &amp; automated)</div>
+              <div class="service">Garden maintenance &amp; plant care</div>
+              <div class="service">Swimming pool cleaning</div>
+              <div class="service">Artificial grass &amp; plant supply</div>
+              <div class="service">Garden materials &amp; tools</div>
+            </div>
+          </div>
+
+          <!-- Right column: why + contact -->
+          <aside class="side-col" aria-labelledby="why-heading">
+            <h3 id="why-heading" class="subheading">Why choose us?</h3>
+            <ul class="why-list">
+              <li>Creative, practical solutions</li>
+              <li>Premium plants &amp; materials</li>
+              <li>Skilled &amp; experienced team</li>
+              <li>Fair pricing &amp; reliable support</li>
+            </ul>
+
+            <div class="contact-block" aria-labelledby="contact-heading">
+              <h4 id="contact-heading" class="subheading">Contact</h4>
+
+              <a class="contact-item" href="tel:+971527784800">
+                <span class="icon" aria-hidden="true">
+                  <!-- phone SVG -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 5.18 2 2 0 0 1 4 3h3a2 2 0 0 1 2 1.72c.12 1.21.38 2.39.76 3.5a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.11.38 2.29.64 3.5.76A2 2 0 0 1 21 16.92z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="contact-text">+971 52 778 4800</span>
+              </a>
+
+              <a class="contact-item" href="tel:+971527116212">
+                <span class="icon" aria-hidden="true">
+                  <!-- phone SVG (duplicate) -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 5.18 2 2 0 0 1 4 3h3a2 2 0 0 1 2 1.72c.12 1.21.38 2.39.76 3.5a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.11.38 2.29.64 3.5.76A2 2 0 0 1 21 16.92z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="contact-text">+971 52 711 6212</span>
+              </a>
+
+              <a class="contact-item" href="mailto:info@manlandscape.ae">
+                <span class="icon" aria-hidden="true">
+                  <!-- mail SVG -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13A2.5 2.5 0 0 0 21 15.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 8.5l-9 6-9-6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span class="contact-text">info@manlandscape.ae</span>
+              </a>
+
+              <div class="contact-item">
+                <span class="icon" aria-hidden="true">
+                  <!-- map pin SVG -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                </span>
+                <span class="contact-text">Dubai — UAE</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="card-footer">
+          <p class="muted">Our digital garden is growing — operations continue as usual. For urgent enquiries please call or email. Thank you for your patience.</p>
+        </footer>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
