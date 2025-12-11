@@ -6,27 +6,27 @@
   <title>Maqased al Noor — Website Under Maintenance</title>
 
   <link rel="stylesheet" href="styles.css">
-  <!-- three.js removed on purpose; script.js still loaded for UI -->
+  <!-- three.js (deferred) -->
   <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- background image container -->
+  <!-- 3D background container -->
   <div id="canvas-container" aria-hidden="true"></div>
 
   <main class="page-root" role="main" aria-labelledby="page-title">
     <article class="glass-card" aria-label="Maqased al Noor Landscape — maintenance info">
       <header class="card-header">
         <div class="brand">
-          <h1 id="page-title" class="brand-title">MAN <span class="brand-sub">LANDSCAPE</span></h1>
-          <p class="tagline">Shaping Nature with Excellence</p>
+          <h1 id="page-title" class="brand-title">MAN LANDSCAPE<span class="brand-sub"></span></h1>
+          <p class="brand-sub">Designing Nature, Building Beauty</p>
         </div>
 
         <div class="status-area">
           <button id="status-badge" class="status-badge" aria-pressed="false" aria-live="polite">
             <span class="emoji">🚧</span>
-            <span class="text">Website Under Maintenance</span>
+            <span class="text"><strong>Website Under Maintenance</strong></span>
           </button>
-          <div class="eta">Estimated return: <strong>Shortly</strong></div>
+
         </div>
       </header>
 
@@ -44,7 +44,7 @@
           <!-- Services column -->
           <div class="services-col">
             <h3 class="subheading">Our Services</h3>
-            <div class="services-grid" id="services-grid" aria-live="polite">
+            <div class="services-grid" id="services-grid">
               <div class="service">Landscape design &amp; maintenance</div>
               <div class="service">Hardscape &amp; softscape</div>
               <div class="service">Irrigation systems (smart &amp; automated)</div>
@@ -52,6 +52,7 @@
               <div class="service">Swimming pool cleaning</div>
               <div class="service">Artificial grass &amp; plant supply</div>
               <div class="service">Garden materials &amp; tools</div>
+              <div class="service">All kind of general maintenance</div>
             </div>
           </div>
 
@@ -114,7 +115,7 @@
         </div>
 
         <footer class="card-footer">
-          <p class="muted">Our digital garden is growing — operations continue as usual. For urgent enquiries please call or email. Thank you for your patience.</p>
+          <p class="muted">Our digital garden is growing - operations continue as usual. For urgent enquiries please call or email. Thank you for your patience.</p>
         </footer>
       </section>
     </article>
